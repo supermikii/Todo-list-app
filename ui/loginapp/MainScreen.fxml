@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchor" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.loginapp.MainScreen">
+   <children>
+      <Pane prefHeight="129.0" prefWidth="600.0" style="-fx-background-color: #ea4f4f#ea4f4f;">
+         <children>
+            <Label layoutX="27.0" layoutY="7.0" prefHeight="47.0" prefWidth="179.0" text="Home Page">
+               <font>
+                  <Font name="Arial Bold Italic" size="30.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Button fx:id="displayRegularItem" layoutX="206.0" layoutY="67.0" mnemonicParsing="false" onAction="#disPlayRegularItem" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #32a3e4#32a3e4 #32a3e4#32a3e4;" text="Search Task" textFill="WHITE" />
+            <DatePicker fx:id="schedule" layoutX="17.0" layoutY="68.0" promptText="Look up a date" />
+            <Button fx:id="additem" layoutX="399.0" layoutY="17.0" mnemonicParsing="false" onAction="#addItem" prefHeight="27.0" prefWidth="179.0" text="Add Task" />
+            <Button fx:id="removebutton" layoutX="397.0" layoutY="59.0" mnemonicParsing="false" onAction="#removeTask" prefHeight="27.0" prefWidth="179.0" text="Change Task" />
+            <Button fx:id="viewNotCompleted" layoutX="397.0" layoutY="96.0" mnemonicParsing="false" onAction="#viewNotCompleted" prefHeight="27.0" prefWidth="179.0" text="Incompleted Task" />
+            <Circle fx:id="notCompleteTasks" layoutX="379.0" layoutY="109.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="insertTasks" fill="#21efff" layoutX="379.0" layoutY="73.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="viewTasks" fill="#c3ff1f" layoutX="379.0" layoutY="31.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Button fx:id="logoutButton" layoutX="520.0" layoutY="407.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #f8f3f3#f8f3f3 #f8f3f3#f8f3f3 #f8f3f3#f8f3f3 #f8f3f3#f8f3f3;" text="Exit" />
+      <TextArea fx:id="todoTextField" layoutX="14.0" layoutY="139.0" prefHeight="261.0" prefWidth="571.0" />
+      <StackPane fx:id="stackPaneFlorCircle" layoutX="175.0" layoutY="375.0" prefHeight="34.0" prefWidth="25.0" />
+      <Circle fx:id="removeTasks" fill="#ff212b" layoutX="520.0" layoutY="285.0" opacity="0.0" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+      <Label layoutX="240.0" layoutY="208.0" />
+   </children>
+</AnchorPane>
