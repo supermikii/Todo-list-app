@@ -1,2 +1,2 @@
 # Todo App visuals is in TodoList.gif
-Completed using Java Environment IntelliJ, you can set a date for your task, and manage your task accordingly. You can also create a username and password so no one else can access your to-do list. 
+Developed using Java. It is my first project but I remember creating my own method to store data's of username and password onto textfile instead of using JSON. The todo app has features like you can set a date for your task, view tasks by date, delete a task or show incompleted tasks. You can also create a username and password so no one else can access your to-do list. 
